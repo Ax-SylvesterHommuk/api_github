@@ -2,8 +2,8 @@ import requests
 import pygal
 from pygal.style import Style
 
-py_URL = "https://api.github.com/search/repositories?q=language:python&sort=true"
-js_URL = "https://api.github.com/search/repositories?q=language:javascript&sort=true"
+py_URL = "https://api.github.com/search/repositories?q=language:python&sort=stars"
+js_URL = "https://api.github.com/search/repositories?q=language:javascript&sort=stars"
 py_response = requests.get(py_URL)
 js_response = requests.get(js_URL)
 
